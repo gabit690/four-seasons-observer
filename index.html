@@ -3,63 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/global.css" />
     <title>Four seasons observer</title>
   </head>
   <body>
-    <header>
+    <header class="glass">
       <h1>four seasons</h1>
     </header>
     <main>
-      <div class="scroll-wrapper">
+      <div class="scroll-wrapper glass">
         <div class="reference-mark">
-          <div class="triangle left"></div>
-          <div class="triangle right"></div>
+          <div class="triangle"></div>
         </div>
         <div id="scrollable-container">
-          <div class="info-container default-color" data-color="default-color">
+          <div class="info-card default-color">
             <p>scroll</p>
             <p>&#128071;</p>
           </div>
-          <div
-            id="autumn-container"
-            class="info-container autumn-color"
-            data-color="autumn-color"
-          >
+          <div class="info-card autumn-color" data-image="autumn-bg">
             <p>autumn</p>
           </div>
-          <div
-            id="winter-container"
-            class="info-container winter-color"
-            data-color="winter-color"
-          >
+          <div class="info-card winter-color" data-image="winter-bg">
             <p>winter</p>
           </div>
-          <div
-            id="spring-container"
-            class="info-container spring-color"
-            data-color="spring-color"
-          >
+          <div class="info-card spring-color" data-image="spring-bg">
             <p>spring</p>
           </div>
-          <div
-            id="summer-container"
-            class="info-container summer-color"
-            data-color="summer-color"
-          >
+          <div class="info-card summer-color" data-image="summer-bg">
             <p>summer</p>
           </div>
-          <div class="info-container default-color" data-color="default-color">
+          <div class="info-card default-color">
             <p>scroll</p>
-            <p>&#128071;</p>
+            <p>&#128070;</p>
           </div>
         </div>
-        <div class="reference-line-bottom"></div>
       </div>
     </main>
-    <footer>
+    <footer class="glass">
       <p class="copyright">Developed by Gabit - 2026</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="scripts/images-preload.js"></script>
+    <script src="scripts/seasons-observer.js"></script>
   </body>
 </html>

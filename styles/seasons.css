@@ -1,0 +1,50 @@
+:root {
+  --summer-color: rgba(255, 254, 0, 0.25);
+  --autumn-color: rgba(255, 127, 0, 0.25);
+  --winter-color: rgba(1, 191, 255, 0.25);
+  --spring-color: rgba(80, 252, 1, 0.25);
+}
+
+.default-bg {
+  background-image: none;
+}
+
+.default-color {
+  background-color: transparent;
+}
+
+.default-color p {
+  color: var(--foreground);
+}
+
+.summer-bg {
+  background-image: url("../images/summer.webp");
+}
+
+.summer-color {
+  background-color: var(--summer-color);
+}
+
+.autumn-bg {
+  background-image: url("../images/autumn.webp");
+}
+
+.autumn-color {
+  background-color: var(--autumn-color);
+}
+
+.winter-bg {
+  background-image: url("../images/winter.webp");
+}
+
+.winter-color {
+  background-color: var(--winter-color);
+}
+
+.spring-bg {
+  background-image: url("../images/spring.webp");
+}
+
+.spring-color {
+  background-color: var(--spring-color);
+}

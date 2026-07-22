@@ -1,0 +1,28 @@
+.scroll-wrapper {
+  position: relative;
+  border-radius: var(--radius-1);
+  overflow: hidden;
+}
+
+.reference-mark {
+  position: absolute;
+  top: var(--mark-position-mobile);
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid red;
+}
+
+@media (min-width: 520px) {
+  .reference-mark {
+    top: var(--mark-position-desktop);
+  }
+}
