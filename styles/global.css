@@ -1,6 +1,7 @@
 @import "intersection-reference.css";
 @import "seasons.css";
 @import "scroll.css";
+@import "overlay.css";
 
 * {
   margin: 0;
@@ -13,9 +14,9 @@
   --shadow-container: 0 4px 24px rgba(0, 0, 0, 0.75);
   --font-body: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --font-heading: "Courier New", Courier, monospace;
-  --transparent-white-low: rgba(255, 255, 255, 0.1);
+  --transparent-white-high: rgba(255, 255, 255, 0.1);
   --transparent-white-medium: rgba(255, 255, 255, 0.25);
-  --transparent-white-high: rgba(255, 255, 255, 0.7);
+  --transparent-white-low: rgba(255, 255, 255, 0.8);
   --radius-1: 20px;
   --scrollable-size-desktop: 500px;
   --scrollable-size-mobile: 300px;
@@ -31,11 +32,12 @@ body {
   font-family: var(--font-body);
   background-size: cover;
   background-position: center;
+  transition: background-image 500ms ease;
 }
 
 .glass {
   border: 1px solid var(--transparent-white-medium);
-  background: var(--transparent-white-low);
+  background: var(--transparent-white-high);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: var(--shadow-container);
@@ -56,6 +58,7 @@ header h1 {
 /* MAIN */
 main {
   flex: 1;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;

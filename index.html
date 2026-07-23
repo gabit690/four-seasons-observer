@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/global.css" />
     <title>Four seasons observer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
+    <section id="overlay">
+      <button id="start-button">start</button>
+    </section>
     <header class="glass">
-      <h1>four seasons</h1>
+      <h1>the four seasons</h1>
     </header>
     <main>
       <div class="scroll-wrapper glass">
@@ -20,16 +24,33 @@
             <p>scroll</p>
             <p>&#128071;</p>
           </div>
-          <div class="info-card autumn-color" data-image="autumn-bg">
+          <div
+            class="info-card autumn-color"
+            data-season="autumn"
+            data-image="autumn-bg"
+            data-season="autumn"
+          >
             <p>autumn</p>
           </div>
-          <div class="info-card winter-color" data-image="winter-bg">
+          <div
+            class="info-card winter-color"
+            data-season="winter"
+            data-image="winter-bg"
+          >
             <p>winter</p>
           </div>
-          <div class="info-card spring-color" data-image="spring-bg">
+          <div
+            class="info-card spring-color"
+            data-season="spring"
+            data-image="spring-bg"
+          >
             <p>spring</p>
           </div>
-          <div class="info-card summer-color" data-image="summer-bg">
+          <div
+            class="info-card summer-color"
+            data-season="summer"
+            data-image="summer-bg"
+          >
             <p>summer</p>
           </div>
           <div class="info-card default-color">
@@ -42,7 +63,9 @@
     <footer class="glass">
       <p class="copyright">Developed by Gabit - 2026</p>
     </footer>
+    <script type="module" src="scripts/audios-manager.js"></script>
     <script src="scripts/images-preload.js"></script>
-    <script src="scripts/seasons-observer.js"></script>
+    <script src="scripts/overlay.js"></script>
+    <script type="module" src="scripts/seasons-observer.js"></script>
   </body>
 </html>

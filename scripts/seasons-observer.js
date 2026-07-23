@@ -1,3 +1,5 @@
+import { seasonAudios } from "./audios-manager.js";
+
 const scrollableContainer = document.getElementById("scrollable-container");
 
 const options = {
@@ -9,10 +11,15 @@ const options = {
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((element) => {
     const imageClass = element.target.dataset.image;
+    const season = element.target.dataset.season;
+    const audio = seasonAudios[season];
     if (element.isIntersecting) {
       document.body.classList.add(imageClass);
+      audio.play();
     } else {
       document.body.classList.remove(imageClass);
+      audio.pause();
+      audio.currentTime = 0;
     }
   });
 }, options);
